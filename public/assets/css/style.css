@@ -17,3 +17,17 @@ body{
 .change{
     font-weight: bold;
 }
+
+
+.gradient{
+    background: rgb(21,86,195);
+    background: linear-gradient(
+        90deg,
+        rgb(14, 53, 248) 0%,
+        rgb(42, 0, 146) 100%
+    );
+    height: 35px;
+}
+
+
+
