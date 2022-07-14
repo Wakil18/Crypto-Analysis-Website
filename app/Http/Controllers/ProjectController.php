@@ -11,13 +11,15 @@ class ProjectController extends Controller
         $response = Http::get("https://api.nomics.com/v1/currencies/ticker?key=10b2c3c8d9447645cef3261207c330ac88646203&per-page=30&page=1");
         return view('index', ['response' => $response->json()]);
     }
+
+    public function about(){
+        return view('about');
+    }
+
 }
 
 
 
-// curl https://api.nomics.com/v1/currencies?key=10b2c3c8d9447645cef3261207c330ac88646203&ids=BTC,ETH,XRP&attributes=id,name,logo_url&platform-currency=ETH
+
+//      https://api.nomics.com/v1/currencies?key=10b2c3c8d9447645cef3261207c330ac88646203&ids=BTC,ETH,XRP&attributes=id,name,logo_url&platform-currency=ETH
 //      https://api.nomics.com/v1/currencies/ticker?key=10b2c3c8d9447645cef3261207c330ac88646203
-
-
-
-//      $data = return response()->json($alarm);

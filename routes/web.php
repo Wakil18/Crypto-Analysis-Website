@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [ProjectController::class, 'getData']);
+Route::get('/', [ProjectController::class, 'getData'])->name('home');
+Route::get('/about', [ProjectController::class, 'about'])->name('about');

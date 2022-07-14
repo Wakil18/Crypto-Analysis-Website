@@ -1,0 +1,19 @@
+body{
+    background-color: #f1f2f7;
+}
+
+.card-text{
+    margin: 5px;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.change{
+    font-weight: bold;
+}
